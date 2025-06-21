@@ -14,11 +14,36 @@ export default function DemoPage() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send data to your backend
-    console.log('Demo request:', formData);
-    setIsSubmitted(true);
+    
+    try {
+      // Send email using API route
+      const response = await fetch('/api/demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          salonName: '',
+          message: ''
+        });
+      } else {
+        alert('There was an error submitting your demo request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your demo request. Please try again.');
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -35,7 +60,7 @@ export default function DemoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Experience BookBot AI
+              Experience SalonSync
               <span className="block text-salon-purple">Live Demo</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -55,7 +80,7 @@ export default function DemoPage() {
                 Try the Interactive Demo
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                This is exactly how your customers will interact with BookBot AI. 
+                This is exactly how your customers will interact with SalonSync. 
                 The conversation flows naturally and handles complex booking scenarios.
               </p>
               
@@ -227,7 +252,7 @@ export default function DemoPage() {
                 </h3>
                 <p className="text-lg text-gray-600 mb-8">
                   Thanks for your interest! We'll contact you within 24 hours to schedule 
-                  your personalized BookBot AI demo.
+                  your personalized SalonSync demo.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
@@ -256,23 +281,23 @@ export default function DemoPage() {
             Need Help or Have Questions?
           </h2>
           <p className="text-gray-600 mb-8">
-            Our team is here to help you understand how BookBot AI can transform your salon.
+            Our team is here to help you understand how SalonSync can transform your salon.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@bookbot.ai"
+              href="mailto:salonsync.first@gmail.com"
               className="inline-flex items-center space-x-2 text-salon-purple hover:text-salon-pink font-semibold"
             >
               <Mail className="h-5 w-5" />
-              <span>hello@bookbot.ai</span>
+              <span>salonsync.first@gmail.com</span>
             </a>
             <a
-              href="tel:+15551234567"
+              href="tel:+918308520943"
               className="inline-flex items-center space-x-2 text-salon-purple hover:text-salon-pink font-semibold"
             >
               <Phone className="h-5 w-5" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 83085 20943</span>
             </a>
           </div>
         </div>

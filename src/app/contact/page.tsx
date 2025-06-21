@@ -13,11 +13,37 @@ export default function ContactPage() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send data to your backend
-    console.log('Contact form:', formData);
-    setIsSubmitted(true);
+    
+    try {
+      // Send email using API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: '',
+          subject: 'general'
+        });
+      } else {
+        alert('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -32,15 +58,15 @@ export default function ContactPage() {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email Support',
       description: 'Get help via email within 24 hours',
-      contact: 'hello@bookbot.ai',
-      action: 'mailto:hello@bookbot.ai'
+      contact: 'salonsync.first@gmail.com',
+      action: 'mailto:salonsync.first@gmail.com'
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: 'Phone Support',
       description: 'Call us during business hours',
-      contact: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      contact: '+91 83085 20943',
+      action: 'tel:+918308520943'
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
@@ -61,7 +87,7 @@ export default function ContactPage() {
             <span className="block text-salon-purple">We're Here to Help</span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Have questions about BookBot AI? Want to see a demo? 
+            Have questions about SalonSync? Want to see a demo? 
             Our team is ready to help you transform your salon's booking process.
           </p>
         </div>
@@ -244,7 +270,7 @@ export default function ContactPage() {
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   Whether you're a small family salon or a large beauty chain, 
-                  BookBot AI can be customized to fit your specific needs. 
+                  SalonSync can be customized to fit your specific needs. 
                   We'd love to learn about your business and show you how AI can help.
                 </p>
               </div>
@@ -259,9 +285,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-salon-purple mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-gray-700">
-                        123 Innovation Drive<br />
-                        San Francisco, CA 94105<br />
-                        United States
+                        India
                       </p>
                     </div>
                   </div>
@@ -270,7 +294,7 @@ export default function ContactPage() {
                     <Clock className="h-5 w-5 text-salon-purple flex-shrink-0" />
                     <div>
                       <p className="text-gray-700">
-                        Monday – Friday: 9:00 AM – 6:00 PM PST<br />
+                        Monday – Friday: 9:00 AM – 6:00 PM IST<br />
                         Weekend: Emergency support only
                       </p>
                     </div>

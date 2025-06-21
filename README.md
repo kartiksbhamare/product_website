@@ -1,48 +1,57 @@
-# BookBot AI - WhatsApp Booking Bot for Salons
+# SalonSync - AI-Powered WhatsApp Booking Bot
 
-A modern, mobile-friendly product website for BookBot AI, an AI-powered WhatsApp booking bot designed specifically for salons, spas, and beauty businesses.
+A modern, mobile-friendly website for SalonSync, an AI-powered WhatsApp booking bot designed specifically for salons and beauty businesses.
 
-## Features
+## 🌟 Features
 
-- **Modern Design**: Clean, professional design with soft colors (blush pink, deep purple)
+- **Modern Design**: Clean, professional design with salon-focused color scheme (blush pink & deep purple)
 - **Mobile-First**: Fully responsive design optimized for all devices
 - **Interactive Demo**: Live WhatsApp chat simulation with QR code functionality
-- **Real-time Stats**: Animated counter components showing business impact
-- **Lead Generation**: Contact forms and demo request functionality
-- **SEO Optimized**: Proper meta tags, structured data, and performance optimization
+- **Real-time Stats**: Animated counters showing business impact
+- **Complete Pages**: Home, How It Works, Features, Pricing, Demo, and Contact pages
+- **Performance Optimized**: Built with Next.js 15 for optimal performance
+- **SEO Ready**: Comprehensive meta tags and structured data
 
-## Pages
+## 🚀 Tech Stack
 
-- **Home**: Hero section with demo, stats, features preview, and testimonials
-- **How It Works**: Step-by-step process explanation with visual timeline
-- **Features**: Comprehensive feature breakdown with use cases
-- **Pricing**: Transparent pricing tiers with feature comparison
-- **Live Demo**: Interactive WhatsApp demo with lead capture
-- **Contact**: Contact form with multiple communication channels
-
-## Tech Stack
-
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS with custom color scheme
+- **Framework**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
 - **Icons**: Lucide React
-- **QR Codes**: qrcode.react
 - **Animations**: Framer Motion
-- **TypeScript**: Full type safety
-- **Deployment**: Optimized for Vercel
+- **QR Codes**: qrcode.react
+- **Deployment**: Vercel-ready
 
-## Getting Started
+## 🎨 Design System
+
+- **Primary Colors**: 
+  - Salon Pink: `#f472b6`
+  - Salon Purple: `#7c3aed`
+- **Typography**: Inter font family
+- **Components**: Reusable, accessible components
+- **Animations**: Smooth transitions and hover effects
+
+## 📱 Pages
+
+1. **Home** (`/`) - Hero section, stats, features preview, testimonials
+2. **How It Works** (`/how-it-works`) - 4-step process explanation
+3. **Features** (`/features`) - Comprehensive feature breakdown
+4. **Pricing** (`/pricing`) - Three-tier pricing with comparison
+5. **Demo** (`/demo`) - Interactive WhatsApp demo with lead capture
+6. **Contact** (`/contact`) - Contact forms and company information
+
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Node.js 18.0.0 or higher
-- npm or yarn
+- Node.js 18.17 or later
+- npm or yarn package manager
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd product-website
+git clone https://github.com/kartiksbhamare/product_website.git
+cd product_website
 ```
 
 2. Install dependencies:
@@ -55,110 +64,58 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Project Structure
+### Build for Production
 
-```
-src/
-├── app/                    # Next.js App Router pages
-│   ├── contact/           # Contact page
-│   ├── demo/              # Live demo page
-│   ├── features/          # Features page
-│   ├── how-it-works/      # How it works page
-│   ├── pricing/           # Pricing page
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── components/            # Reusable components
-│   ├── Footer.tsx         # Site footer
-│   ├── Navigation.tsx     # Navigation header
-│   ├── StatsCounter.tsx   # Animated counter
-│   └── WhatsAppDemo.tsx   # Interactive demo
-public/                    # Static assets
+```bash
+npm run build
+npm start
 ```
 
-## Key Components
+## 🚀 Deployment
 
-### WhatsAppDemo
-Interactive WhatsApp conversation simulator with:
-- Chat interface mockup
-- QR code generation
-- Toggle between chat and QR views
+This project is optimized for Vercel deployment:
 
-### StatsCounter
-Animated counter component with:
-- Smooth easing animations
-- Customizable duration and formatting
-- Performance optimized
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with zero configuration
 
-### Navigation
-Responsive navigation with:
-- Mobile hamburger menu
-- Smooth scrolling
-- Active state indicators
+## 📊 Key Features Implemented
 
-## Customization
+- ✅ Responsive navigation with mobile menu
+- ✅ Interactive WhatsApp demo with QR codes
+- ✅ Animated statistics counters
+- ✅ Testimonials with Indian names and salons
+- ✅ Comprehensive pricing tiers in Indian Rupees
+- ✅ Contact forms with validation
+- ✅ SEO optimization
+- ✅ Performance optimization
+- ✅ Accessibility features
 
-### Colors
-The website uses a custom color palette defined in `tailwind.config.ts`:
-- **Blush Pink**: #f472b6 (salon-pink)
-- **Deep Purple**: #7c3aed (salon-purple)
-- **Gradients**: Various pink-to-purple combinations
+## 🎯 Business Goals
 
-### Content
-All content is easily customizable by editing the respective page components. Key areas:
-- Hero messaging
-- Feature descriptions
-- Pricing tiers
-- Contact information
+- Convert salon owners to try the booking bot
+- Showcase AI capabilities through interactive demo
+- Build trust through social proof and testimonials
+- Provide clear pricing and value proposition
+- Capture leads through demo requests and contact forms
 
-## Deployment
+## 🔧 Customization
 
-### Vercel (Recommended)
-1. Connect your repository to Vercel
-2. Configure build settings (auto-detected)
-3. Deploy with one click
+The website is built with a modular component structure, making it easy to:
+- Update content and copy
+- Modify colors and branding
+- Add new features or pages
+- Integrate with backend services
+- Customize for different markets
 
-### Other Platforms
-The project works with any platform supporting Next.js:
-- Netlify
-- AWS Amplify  
-- Docker containers
+## 📞 Contact
 
-## Performance
+For questions about this website or SalonSync:
+- Email: salonsync.first@gmail.com
+- Phone: +91 83085 20943
 
-- **Lighthouse Score**: 95+ across all metrics
-- **Core Web Vitals**: Optimized for LCP, FID, and CLS
-- **Bundle Size**: Minimized with tree-shaking
-- **Images**: Next.js Image optimization
-- **Fonts**: Optimized loading with next/font
+## 📄 License
 
-## SEO Features
-
-- Semantic HTML structure
-- Open Graph tags
-- Twitter Card support
-- Structured data markup
-- Mobile-friendly design
-- Fast loading times
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## License
-
-This project is private and proprietary to BookBot AI.
-
-## Support
-
-For questions or support, contact the development team or visit our [contact page](./src/app/contact/page.tsx).
-
----
-
-Built with ❤️ for salon owners who want to automate their booking process and grow their business with AI.
+This project is proprietary and confidential. All rights reserved.

@@ -5,7 +5,7 @@ export default function PricingPage() {
   const plans = [
     {
       name: 'Starter',
-      price: 49,
+      price: 3999,
       description: 'Perfect for small salons just getting started',
       icon: <Zap className="h-8 w-8" />,
       features: [
@@ -27,7 +27,7 @@ export default function PricingPage() {
     },
     {
       name: 'Professional',
-      price: 99,
+      price: 7999,
       description: 'Best for growing salons with multiple staff',
       icon: <Crown className="h-8 w-8" />,
       features: [
@@ -49,7 +49,7 @@ export default function PricingPage() {
     },
     {
       name: 'Enterprise',
-      price: 199,
+      price: 15999,
       description: 'For large salons and multi-location businesses',
       icon: <Building className="h-8 w-8" />,
       features: [
@@ -149,7 +149,7 @@ export default function PricingPage() {
                   
                   <div className="mb-6">
                     <div className="flex items-baseline">
-                      <span className="text-5xl font-bold text-gray-900">${plan.price}</span>
+                      <span className="text-5xl font-bold text-gray-900">₹{plan.price}</span>
                       <span className="text-gray-600 ml-2">/month</span>
                     </div>
                     <p className="text-gray-600 mt-2">{plan.description}</p>
@@ -280,7 +280,7 @@ export default function PricingPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Join 1000+ salons already using BookBot AI to automate their bookings 
+            Join 1000+ salons already using SalonSync to automate their bookings 
             and grow their business.
           </p>
           

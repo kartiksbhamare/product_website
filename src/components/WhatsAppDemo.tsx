@@ -24,17 +24,17 @@ export default function WhatsAppDemo() {
     },
     {
       type: 'sent',
-      message: 'Perfect! I have these slots available tomorrow afternoon:\n\n🕐 2:00 PM - Sarah (Senior Stylist)\n🕓 3:30 PM - Mike (Hair Specialist)\n🕔 4:00 PM - Sarah (Senior Stylist)\n\nWhich time works for you?',
+      message: 'Perfect! I have these slots available tomorrow afternoon:\n\n🕐 2:00 PM - Neha (Senior Stylist)\n🕓 3:30 PM - Arjun (Hair Specialist)\n🕔 4:00 PM - Kavya (Senior Stylist)\n\nWhich time works for you?',
       time: '10:31 AM',
     },
     {
       type: 'received',
-      message: '3:30 PM with Mike sounds perfect!',
+      message: '3:30 PM with Arjun sounds perfect!',
       time: '10:32 AM',
     },
     {
       type: 'sent',
-      message: '✅ Great choice! I\'ve booked you for:\n\n📅 Tomorrow, Dec 15th\n🕓 3:30 PM\n💇‍♂️ Haircut with Mike\n💰 $45\n\nPlease provide your name and phone number to confirm.',
+      message: '✅ Great choice! I\'ve booked you for:\n\n📅 Tomorrow, Dec 15th\n🕓 3:30 PM\n💇‍♂️ Haircut with Arjun\n💰 ₹450\n\nPlease provide your name and phone number to confirm.',
       time: '10:32 AM',
     },
   ];
@@ -75,8 +75,8 @@ export default function WhatsAppDemo() {
               <span className="text-green-500 font-bold text-lg">🏪</span>
             </div>
             <div>
-              <h3 className="font-semibold">Glamour Salon</h3>
-              <p className="text-xs opacity-90">BookBot AI • Online</p>
+              <h3 className="font-semibold">Aura Beauty Salon</h3>
+              <p className="text-xs opacity-90">SalonSync AI • Online</p>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ export default function WhatsAppDemo() {
           <div className="flex justify-center">
             <div className="bg-white p-4 rounded-2xl shadow-lg">
               <QRCodeSVG
-                value="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20try%20the%20BookBot%20demo"
+                value="https://wa.me/918308520943?text=Hi!%20I'd%20like%20to%20try%20the%20SalonSync%20demo"
                 size={200}
                 bgColor="#ffffff"
                 fgColor="#000000"
@@ -144,7 +144,7 @@ export default function WhatsAppDemo() {
           <div className="space-y-2">
             <p className="text-xs text-gray-500">Or click to open WhatsApp directly:</p>
             <a
-              href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20try%20the%20BookBot%20demo"
+              href="https://wa.me/918308520943?text=Hi!%20I'd%20like%20to%20try%20the%20SalonSync%20demo"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-medium hover:bg-green-600 transition-colors"

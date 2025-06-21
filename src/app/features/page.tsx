@@ -113,19 +113,19 @@ export default function FeaturesPage() {
       features: ['Stylist matching', 'Color consultation booking', 'Treatment scheduling']
     },
     {
-      title: 'Beauty Spas',
-      description: 'Ideal for facial treatments, massages, and wellness services',
-      features: ['Treatment packages', 'Therapist preferences', 'Wellness consultations']
+      title: 'Beauty Parlours',
+      description: 'Ideal for facial treatments, threading, and bridal services',
+      features: ['Bridal packages', 'Facial treatments', 'Threading & waxing']
     },
     {
-      title: 'Nail Salons',
+      title: 'Nail Studios',
       description: 'Optimized for manicures, pedicures, and nail art appointments',
       features: ['Service duration tracking', 'Design consultations', 'Group bookings']
     },
     {
-      title: 'Barbershops',
-      description: 'Designed for quick cuts, shaves, and grooming services',
-      features: ['Walk-in management', 'Loyalty tracking', 'Group appointments']
+      title: 'Unisex Salons',
+      description: 'Designed for comprehensive grooming services for all',
+      features: ['Family bookings', 'Service packages', 'Loyalty tracking']
     }
   ];
 
@@ -216,7 +216,7 @@ export default function FeaturesPage() {
               Perfect for Every Salon Type
             </h2>
             <p className="text-xl text-gray-600">
-              BookBot AI adapts to your specific salon needs and workflow
+              SalonSync adapts to your specific salon needs and workflow
             </p>
           </div>
           
@@ -317,7 +317,7 @@ export default function FeaturesPage() {
             Ready to Experience These Features?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            See how BookBot AI can transform your salon with a personalized demo.
+            See how SalonSync can transform your salon with a personalized demo.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

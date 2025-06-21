@@ -77,12 +77,12 @@ export default function HowItWorksPage() {
       <section className="py-20 bg-gradient-to-br from-blush-50 to-deep-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            How BookBot AI
-            <span className="block text-salon-purple">Works for You</span>
+            How SalonSync
+            <span className="block text-salon-purple">Works</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            From setup to growth, see how our AI-powered WhatsApp bot transforms 
-            your salon's booking process in just 4 simple steps.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Get your AI-powered WhatsApp booking bot up and running in just 4 simple steps. 
+            No technical expertise required.
           </p>
         </div>
       </section>
@@ -243,8 +243,8 @@ export default function HowItWorksPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Join the revolution in salon booking automation. 
-            Start your free trial today and see the difference.
+            Ready to transform your salon with SalonSync? Start your free trial today 
+            and see the difference AI can make for your business.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

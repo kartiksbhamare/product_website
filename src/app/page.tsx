@@ -120,7 +120,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Salons Choose BookBot AI
+              Why Salons Choose SalonSync
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our intelligent WhatsApp bot handles everything from appointment scheduling 
@@ -209,16 +209,16 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-4">
-                "BookBot AI has transformed our booking process. We've seen a 50% 
+                "SalonSync has transformed our booking process. We've seen a 50% 
                 reduction in no-shows and our clients love the convenience!"
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-salon-pink rounded-full flex items-center justify-center text-white font-bold">
-                  S
+                  P
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Sarah Johnson</p>
-                  <p className="text-sm text-gray-600">Owner, Glamour Studio</p>
+                  <p className="font-semibold text-gray-900">Priya Sharma</p>
+                  <p className="text-sm text-gray-600">Owner, Radiance Beauty Salon</p>
                 </div>
               </div>
             </div>
@@ -235,11 +235,11 @@ export default function Home() {
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-salon-purple rounded-full flex items-center justify-center text-white font-bold">
-                  M
+                  R
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Mike Chen</p>
-                  <p className="text-sm text-gray-600">Manager, Elite Hair Salon</p>
+                  <p className="font-semibold text-gray-900">Rajesh Kumar</p>
+                  <p className="text-sm text-gray-600">Manager, Elegant Hair Studio</p>
                 </div>
               </div>
             </div>
@@ -252,15 +252,15 @@ export default function Home() {
               </div>
               <p className="text-gray-700 mb-4">
                 "Our revenue increased by 35% in just 3 months. 
-                BookBot AI pays for itself and then some!"
+                SalonSync pays for itself and then some!"
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-salon-pink rounded-full flex items-center justify-center text-white font-bold">
-                  L
+                  A
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Lisa Rodriguez</p>
-                  <p className="text-sm text-gray-600">Owner, Luxe Beauty Bar</p>
+                  <p className="font-semibold text-gray-900">Anita Patel</p>
+                  <p className="text-sm text-gray-600">Owner, Bliss Beauty Parlour</p>
                 </div>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function Home() {
             Ready to Transform Your Salon?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Join 1000+ salons using BookBot AI to automate bookings and grow their business.
+            Join 1000+ salons using SalonSync to automate bookings and grow their business.
             Start your free 30-day trial today - no credit card required.
           </p>
           

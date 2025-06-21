@@ -26,7 +26,7 @@ export default function Navigation() {
                 <Bot className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-salon-pink to-salon-purple bg-clip-text text-transparent">
-                BookBot AI
+                SalonSync
               </span>
             </Link>
           </div>

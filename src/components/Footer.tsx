@@ -13,7 +13,7 @@ export default function Footer() {
                 <Bot className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-salon-pink to-salon-purple bg-clip-text text-transparent">
-                BookBot AI
+                SalonSync
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -73,17 +73,16 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-salon-pink" />
-                <span className="text-gray-400 text-sm">hello@bookbot.ai</span>
+                <span className="text-gray-400 text-sm">salonsync.first@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-salon-pink" />
-                <span className="text-gray-400 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-400 text-sm">+91 83085 20943</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-salon-pink mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  San Francisco, CA<br />
-                  United States
+                  India
                 </span>
               </div>
             </div>
@@ -93,7 +92,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 BookBot AI. All rights reserved.
+            © 2024 SalonSync. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
