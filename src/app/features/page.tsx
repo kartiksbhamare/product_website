@@ -1,55 +1,88 @@
 import { 
   Bot, Calendar, MessageCircle, TrendingUp, Shield, Clock, 
   Users, BarChart3, Smartphone, Zap, CheckCircle, ArrowRight,
-  HeadphonesIcon, Globe, CreditCard, RefreshCw
+  HeadphonesIcon, Globe, CreditCard, RefreshCw, Bell, Palette, Building, Settings, Sparkles, Star
 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FeaturesPage() {
   const mainFeatures = [
     {
-      icon: <Bot className="h-12 w-12" />,
-      title: 'AI-Powered Conversations',
-      description: 'Natural language processing that understands customer intent and responds like a human receptionist.',
-      benefits: [
-        'Understands complex booking requests',
-        'Handles multiple languages',
-        'Learns from conversations',
-        'Contextual responses'
-      ]
+      title: '24/7 WhatsApp Booking Bot',
+      description: 'Your salon\'s digital receptionist — always online.',
+      details: 'Customers can book anytime, even after hours or on holidays.',
+      icon: <Bot className="h-8 w-8" />,
+      emoji: '🤖'
     },
     {
-      icon: <Calendar className="h-12 w-12" />,
-      title: 'Smart Scheduling',
-      description: 'Intelligent calendar management that optimizes appointments and prevents conflicts.',
-      benefits: [
-        'Real-time availability checking',
-        'Automatic conflict resolution',
-        'Staff preference matching',
-        'Service duration optimization'
-      ]
+      title: 'Interactive Service Menu',
+      description: 'Customers instantly see your full menu with names, prices, and service times.',
+      details: '💇 Haircut? 💅 Manicure? It\'s all there — beautifully formatted and easy to select.',
+      icon: <Calendar className="h-8 w-8" />,
+      emoji: '📋'
     },
     {
-      icon: <MessageCircle className="h-12 w-12" />,
-      title: '24/7 Customer Service',
-      description: 'Round-the-clock availability ensures you never miss a booking opportunity.',
-      benefits: [
-        'Instant response to inquiries',
-        'After-hours booking acceptance',
-        'Weekend and holiday coverage',
-        'Multiple conversation handling'
-      ]
+      title: 'Multi-Barber Scheduling',
+      description: 'Let customers choose their favorite barber/stylist.',
+      details: 'Each barber has their own time slots — no overlaps, no confusion.',
+      icon: <Users className="h-8 w-8" />,
+      emoji: '👩‍🎨'
     },
     {
-      icon: <TrendingUp className="h-12 w-12" />,
-      title: 'Revenue Optimization',
-      description: 'AI-driven insights and automated upselling to maximize your salon\'s revenue.',
-      benefits: [
-        'Automated service recommendations',
-        'Peak time pricing suggestions',
-        'Customer lifetime value tracking',
-        'Revenue forecasting'
-      ]
+      title: 'Real-Time Slot Availability',
+      description: 'The bot checks your available slots live — so no double bookings ever.',
+      details: '',
+      icon: <Clock className="h-8 w-8" />,
+      emoji: '📆'
+    },
+    {
+      title: 'Instant Confirmations',
+      description: 'As soon as a booking is made, the customer and the salon get a WhatsApp message confirmation.',
+      details: '',
+      icon: <MessageCircle className="h-8 w-8" />,
+      emoji: '📲'
+    },
+    {
+      title: 'Automated Reminders',
+      description: 'Reduce no-shows with gentle automated WhatsApp reminders sent before the appointment.',
+      details: '',
+      icon: <Bell className="h-8 w-8" />,
+      emoji: '🔔'
+    },
+    {
+      title: 'Admin Dashboard',
+      description: 'View all bookings in a beautiful web dashboard.',
+      details: 'Filter by date, barber, or status — works in real time.',
+      icon: <BarChart3 className="h-8 w-8" />,
+      emoji: '📊'
+    },
+    {
+      title: 'Custom Branding',
+      description: 'We\'ll add your logo, business name, and tone of voice so your bot feels like part of your salon.',
+      details: '',
+      icon: <Palette className="h-8 w-8" />,
+      emoji: '🖼️'
+    },
+    {
+      title: 'Works Without a Website',
+      description: 'You don\'t need to build or manage a website. All bookings happen via WhatsApp — simple, fast, familiar.',
+      details: '',
+      icon: <Globe className="h-8 w-8" />,
+      emoji: '🌐'
+    },
+    {
+      title: 'Multi-Location Ready',
+      description: 'If you have more than one branch or staff working in shifts, we support that too.',
+      details: '',
+      icon: <Building className="h-8 w-8" />,
+      emoji: '💼'
+    },
+    {
+      title: 'Free Setup & Easy Integration',
+      description: 'No technical knowledge needed. We set up everything for you — ready to go in 24 hours.',
+      details: '',
+      icon: <Settings className="h-8 w-8" />,
+      emoji: '🛠️'
     }
   ];
 
@@ -129,49 +162,85 @@ export default function FeaturesPage() {
     }
   ];
 
+  const extraTouches = [
+    'Mobile-first design',
+    'Emoji-enhanced messages for friendliness',
+    'Staff booking notifications',
+    'Optional customer notes (e.g., "wants haircut + shave")',
+    'Easy export to Excel (for reports)'
+  ];
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blush-50 to-deep-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Powerful Features for
-            <span className="block text-salon-purple">Modern Salons</span>
-          </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Everything you need to automate bookings, delight customers, 
-            and grow your salon business with AI-powered intelligence.
-          </p>
+          <div className="flex items-center justify-center space-x-2 mb-6">
+            <Sparkles className="h-8 w-8 text-salon-purple" />
+            <h1 className="text-5xl font-bold text-gray-900">
+              ✨ Features
+            </h1>
+          </div>
+          <h2 className="text-3xl font-bold text-salon-purple mb-6">
+            Everything You Need to Automate Bookings & Delight Customers
+          </h2>
         </div>
       </section>
 
       {/* Main Features */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="space-y-16">
             {mainFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="bg-gradient-to-r from-salon-pink to-salon-purple p-4 rounded-2xl text-white">
-                    {feature.icon}
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    {feature.title}
-                  </h2>
+              <div key={feature.title}>
+                {/* Feature Divider */}
+                <div className="flex items-center justify-center mb-12">
+                  <div className="flex-1 h-px bg-gradient-to-r from-transparent to-salon-purple/30"></div>
+                  <div className="px-4 text-salon-purple/60">⸻</div>
+                  <div className="flex-1 h-px bg-gradient-to-l from-transparent to-salon-purple/30"></div>
                 </div>
-                
-                <p className="text-lg text-gray-600 mb-6">
-                  {feature.description}
-                </p>
-                
-                <ul className="space-y-3">
-                  {feature.benefits.map((benefit, benefitIndex) => (
-                    <li key={benefitIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span className="text-gray-700">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 1 ? 'lg:direction-reverse' : ''
+                }`}>
+                  <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="text-4xl">{feature.emoji}</div>
+                      <div className="bg-gradient-to-r from-salon-pink to-salon-purple p-3 rounded-xl text-white">
+                        {feature.icon}
+                      </div>
+                    </div>
+                    
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                      {feature.title}
+                    </h2>
+                    
+                    <p className="text-lg text-gray-600 mb-4">
+                      {feature.description}
+                    </p>
+                    
+                    {feature.details && (
+                      <p className="text-gray-600">
+                        {feature.details}
+                      </p>
+                    )}
+                  </div>
+                  
+                  <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-blush-50 to-deep-purple-50 rounded-2xl p-8 border border-salon-purple/20">
+                        <div className="flex items-center justify-center">
+                          <div className="bg-white p-8 rounded-xl shadow-lg">
+                            <div className="text-6xl mb-4 text-center">{feature.emoji}</div>
+                            <div className="bg-gradient-to-r from-salon-pink to-salon-purple p-4 rounded-xl text-white text-center">
+                              {feature.icon}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -310,6 +379,101 @@ export default function FeaturesPage() {
         </div>
       </section>
 
+      {/* Extra Touches Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Divider */}
+          <div className="flex items-center justify-center mb-12">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent to-salon-purple/30"></div>
+            <div className="px-4 text-salon-purple/60">⸻</div>
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent to-salon-purple/30"></div>
+          </div>
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              💡 Extra Touches That Make a Big Difference:
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Small details that create exceptional customer experiences
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {extraTouches.map((touch, index) => (
+              <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-green-200">
+                <div className="flex items-center space-x-3">
+                  <div className="bg-gradient-to-r from-green-500 to-blue-500 p-2 rounded-full">
+                    <CheckCircle className="h-4 w-4 text-white" />
+                  </div>
+                  <span className="text-gray-800 font-medium">{touch}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Summary */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why Salon Owners Love SalonSync
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real results from real businesses
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-200">
+              <div className="flex items-center space-x-4 mb-4">
+                <div className="bg-green-500 p-3 rounded-full">
+                  <Star className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-green-600">40%</div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                More Bookings
+              </h3>
+              <p className="text-gray-600">
+                Customers book more often when it's this easy
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-200">
+              <div className="flex items-center space-x-4 mb-4">
+                <div className="bg-blue-500 p-3 rounded-full">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-blue-600">60%</div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Fewer No-Shows
+              </h3>
+              <p className="text-gray-600">
+                Automated reminders keep customers committed
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-200">
+              <div className="flex items-center space-x-4 mb-4">
+                <div className="bg-salon-purple p-3 rounded-full">
+                  <Clock className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-salon-purple">5 hrs</div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Time Saved Weekly
+              </h3>
+              <p className="text-gray-600">
+                No more phone calls or manual scheduling
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-salon-pink to-salon-purple">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -317,7 +481,7 @@ export default function FeaturesPage() {
             Ready to Experience These Features?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            See how SalonSync can transform your salon with a personalized demo.
+            See how SalonSync can transform your salon's booking process in just 24 hours.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -333,8 +497,8 @@ export default function FeaturesPage() {
               href="/pricing"
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white hover:text-salon-purple transition-all duration-300 inline-flex items-center justify-center space-x-2"
             >
-              <span>View Pricing</span>
-              <ArrowRight className="h-5 w-5" />
+              <span>See Pricing</span>
+              <Sparkles className="h-5 w-5" />
             </Link>
           </div>
         </div>
