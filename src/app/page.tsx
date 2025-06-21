@@ -1,5 +1,5 @@
 'use client';
-import { ArrowRight, Bot, Calendar, MessageCircle, TrendingUp, CheckCircle, Star, Phone } from 'lucide-react';
+import { ArrowRight, Scissors, Calendar, MessageCircle, TrendingUp, CheckCircle, Star, Phone } from 'lucide-react';
 import Link from 'next/link';
 import StatsCounter from '@/components/StatsCounter';
 import WhatsAppDemo from '@/components/WhatsAppDemo';
@@ -14,7 +14,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left space-y-8">
               <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
-                <Bot className="h-5 w-5 text-salon-purple" />
+                <Scissors className="h-5 w-5 text-salon-purple" />
                 <span className="text-sm font-medium text-gray-700">AI-Powered Booking Assistant</span>
               </div>
               

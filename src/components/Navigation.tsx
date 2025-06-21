@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Menu, X, Bot, Phone } from 'lucide-react';
+import { Menu, X, Scissors, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Navigation() {
@@ -23,7 +23,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="bg-gradient-to-r from-salon-pink to-salon-purple p-2 rounded-xl">
-                <Bot className="h-6 w-6 text-white" />
+                <Scissors className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-salon-pink to-salon-purple bg-clip-text text-transparent">
                 SalonSync
