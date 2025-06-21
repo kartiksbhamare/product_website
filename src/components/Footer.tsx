@@ -1,5 +1,6 @@
-import { Scissors, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -9,9 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-salon-pink to-salon-purple p-2 rounded-xl">
-                <Scissors className="h-6 w-6 text-white" />
-              </div>
+              <Logo size={32} className="hover:scale-105 transition-transform duration-300" />
               <span className="text-xl font-bold bg-gradient-to-r from-salon-pink to-salon-purple bg-clip-text text-transparent">
                 SalonSync
               </span>
