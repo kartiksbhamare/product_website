@@ -50,9 +50,20 @@ body {
   background: #ec4899;
 }
 
-/* Smooth animations */
-* {
+/* Smooth animations - More specific selectors for better performance */
+a, button, .transition-smooth {
   transition: all 0.3s ease;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  a, button, .transition-smooth {
+    transition: none;
+  }
+  
+  .float-animation, .pulse-glow {
+    animation: none;
+  }
 }
 
 /* Custom gradient backgrounds */
@@ -88,4 +99,16 @@ body {
 
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Additional utility classes */
+.bg-grid-pattern {
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Focus styles for accessibility */
+.focus-ring:focus {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
 }
