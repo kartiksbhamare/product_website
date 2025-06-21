@@ -76,6 +76,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quick Navigation Section */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              🧭 Explore SalonSync
+            </h2>
+            <p className="text-lg text-gray-600">
+              Everything you need to know about automating your salon bookings
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <Link
+              href="/how-it-works"
+              className="group bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">⚙️</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">How It Works</h3>
+              <p className="text-sm text-gray-600">See the booking process step-by-step</p>
+              <div className="mt-4 text-blue-600 font-medium flex items-center justify-center space-x-1">
+                <span>Learn more</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            <Link
+              href="/features"
+              className="group bg-gradient-to-br from-purple-50 to-pink-100 p-6 rounded-2xl border border-purple-200 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">✨</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Features</h3>
+              <p className="text-sm text-gray-600">Discover all powerful capabilities</p>
+              <div className="mt-4 text-purple-600 font-medium flex items-center justify-center space-x-1">
+                <span>Explore features</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            <Link
+              href="/pricing"
+              className="group bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-2xl border border-green-200 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">💰</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Pricing</h3>
+              <p className="text-sm text-gray-600">Simple plans for every salon size</p>
+              <div className="mt-4 text-green-600 font-medium flex items-center justify-center space-x-1">
+                <span>View plans</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            <Link
+              href="/demo"
+              className="group bg-gradient-to-br from-orange-50 to-red-100 p-6 rounded-2xl border border-orange-200 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🎬</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Live Demo</h3>
+              <p className="text-sm text-gray-600">Try the booking bot yourself</p>
+              <div className="mt-4 text-orange-600 font-medium flex items-center justify-center space-x-1">
+                <span>Try demo</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            <Link
+              href="/contact"
+              className="group bg-gradient-to-br from-teal-50 to-cyan-100 p-6 rounded-2xl border border-teal-200 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">📞</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Contact</h3>
+              <p className="text-sm text-gray-600">Get help from our team</p>
+              <div className="mt-4 text-teal-600 font-medium flex items-center justify-center space-x-1">
+                <span>Get in touch</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
