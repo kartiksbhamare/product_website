@@ -44,8 +44,8 @@ export default function Home() {
                 
                 <Link
                   href="https://wa.me/918308520943"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                   className="bg-white text-gray-700 px-8 py-4 rounded-full text-lg font-semibold border-2 border-gray-200 hover:border-salon-purple hover:text-salon-purple transition-all duration-300 inline-flex items-center justify-center space-x-2"
                 >
                   <span>💬 Chat with Us</span>
@@ -402,8 +402,8 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="https://wa.me/918308520943"
-              target="_blank"
-              rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
               className="bg-white text-salon-purple px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2"
             >
               <MessageCircle className="h-5 w-5" />
