@@ -14,6 +14,21 @@ export const metadata: Metadata = {
   keywords: "salon booking, WhatsApp bot, AI assistant, appointment scheduling, beauty salon, hair salon, spa booking",
   authors: [{ name: "SalonSync" }],
   creator: "SalonSync",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/bot-logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/android-chrome-192x192.png",
+      },
+    ],
+  },
   openGraph: {
     title: "SalonSync - WhatsApp Booking Bot for Salons",
     description: "Automate your salon bookings with our AI-powered WhatsApp bot. Increase efficiency, reduce no-shows, and grow your business.",
